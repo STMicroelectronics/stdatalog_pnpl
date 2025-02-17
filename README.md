@@ -21,10 +21,16 @@ This feature is particularly useful for developers who need to customize and int
 
 ## Installation
 
-You can install the `stdatalog_pnpl` package using pip:
+To install the `stdatalog_pnpl` package after downloading it, execute the following command from the package's root directory:
 
+On Windows:
 ```sh
-pip install stdatalog_pnpl
+python -m pip install dist\stdatalog_pnpl-1.0.0-py3-none-any.whl
+```
+
+On Linux:
+```sh
+python3 -m pip install dist/stdatalog_pnpl-1.0.0-py3-none-any.whl
 ```
 
 The package could also be installed as part of the **STDATALOG-PYSDK** by launching the SDK installation script from the SDK root folder:
@@ -38,6 +44,8 @@ On Linux:
 ```sh
 ./STDATALOG-PYSDK_install.sh
 ```
+
+Source code is also available within the inner `stdatalog_pnpl` folder.
 
 ## Usage
 Here is a basic example of how to use the stdatalog_pnpl package:
