@@ -21,7 +21,7 @@ with open("LICENSE.md", "r") as fh:
 
 setuptools.setup(
     name="stdatalog_pnpl",
-    version="1.0.0",
+    version="1.1.0",
     author="SRA-ASP",
     author_email="matteo.ronchi@st.com",
     description="STMicroelectronics PnP-Like and DTDL Device Template Models management python package",

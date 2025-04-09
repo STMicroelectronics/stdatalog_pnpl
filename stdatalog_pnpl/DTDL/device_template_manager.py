@@ -17,8 +17,8 @@ import os
 import sys
 import json
 from datetime import datetime
-# import requests #NOTE for next version
 from stdatalog_pnpl.DTDL import device_template_model as DTM
+import requests
 
 def generate_datetime_string():
     now = datetime.now()
@@ -33,7 +33,7 @@ def print_warning(text):
 
 class DeviceTemplateManager:
 
-    def __init__(self, device_template_json: dict) -> None:
+    def __init__(self, device_template_json: dict) -> None:        
         self.device_template_model = device_template_json
         self.interface_list = self.__get_interface_list()
         
@@ -84,12 +84,21 @@ class DeviceTemplateManager:
             # print("DeviceTemplateManager - ERROR - Component \'{}\' doesn't exist in your selected Device Template".format(comp_name))
 
     @staticmethod
+    def get_local_catalog_info():
+        usb_device_catalog_path = os.path.join(os.path.dirname(sys.modules[__name__].__file__),"usb_device_catalog.json")
+        with open(usb_device_catalog_path, "r") as catalog:
+            catalog_dict = json.load(catalog)
+            return {"date": catalog_dict.get("date","1970-01-01T00:00:00.000000Z"), "version": catalog_dict.get("version","0.0.0"), "checksum": catalog_dict.get("checksum","00000000000000000000000000000000")}
+    
+    @staticmethod
     def remove_custom_dtdl_model(board_id, fw_id):
         usb_device_catalog_path = os.path.join(os.path.dirname(sys.modules[__name__].__file__),"usb_device_catalog.json")
         with open(usb_device_catalog_path, "r") as catalog:
             catalog_dict = json.load(catalog)
+            if "usb" in catalog_dict:
+                catalog_dict = catalog_dict.get("usb")
             for entry in catalog_dict: 
-                if entry["board_id"] == board_id and entry["fw_id"] == fw_id:
+                if entry["board_id"] == board_id and entry.get("fw_id",entry.get("usb_fw_id")) == fw_id:
                     target_file_path = entry["custom_dtmi"]
                     if os.path.exists(target_file_path):
                         os.remove(target_file_path)
@@ -125,7 +134,7 @@ class DeviceTemplateManager:
                 new_dtdl["custom_dtmi"] = target_file_path
                 catalog_dict.append(new_dtdl)
                 # print("Added new Device Template [{},{}]".format(board_id, fw_id))
-                print("{} - HSDatalogApp.{} - INFO - Added new Device Template [{},{}]".format(generate_datetime_string(), __name__, board_id, fw_id))
+                print(f"{generate_datetime_string()} - HSDatalogApp.{__name__} - INFO - Added new Device Template [{board_id},{fw_id}] {target_file_path}")
 
         if not os.path.exists(target_folder):
             os.makedirs(target_folder)
@@ -142,6 +151,10 @@ class DeviceTemplateManager:
             temp = json.load(catalog)
             dtdl_model_ids = []
             for entry in temp:
+                entry["board_id"] = int(entry["board_id"], 16) if isinstance(entry["board_id"], str) else entry["board_id"]
+                entry["fw_id"] = int(entry["fw_id"], 16) if isinstance(entry["fw_id"], str) else entry["fw_id"]
+                board_id = int(board_id, 16) if isinstance(board_id, str) else board_id
+                fw_id = int(fw_id, 16) if isinstance(fw_id, str) else fw_id
                 if entry["board_id"] == board_id and entry["fw_id"] == fw_id:
                     if "custom_dtmi" in entry and entry["custom_dtmi"] != "":
                         # print("DeviceTemplateManager - ALERT - CUSTOM User dtmi Overwrites the base supported model. Call remove_custom_dtdl_model(...) to restore the original one.")

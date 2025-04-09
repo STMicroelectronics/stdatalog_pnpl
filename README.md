@@ -25,12 +25,12 @@ To install the `stdatalog_pnpl` package after downloading it, execute the follow
 
 On Windows:
 ```sh
-python -m pip install dist\stdatalog_pnpl-1.0.0-py3-none-any.whl
+python -m pip install dist\stdatalog_pnpl-1.1.0-py3-none-any.whl
 ```
 
-On Linux:
+On Linux/macOS:
 ```sh
-python3 -m pip install dist/stdatalog_pnpl-1.0.0-py3-none-any.whl
+python3 -m pip install dist/stdatalog_pnpl-1.1.0-py3-none-any.whl
 ```
 
 The package could also be installed as part of the **STDATALOG-PYSDK** by launching the SDK installation script from the SDK root folder:
@@ -40,7 +40,7 @@ On Windows:
 .\STDATALOG-PYSDK_install.bat
 ```
 
-On Linux:
+On Linux/macOS:
 ```sh
 ./STDATALOG-PYSDK_install.sh
 ```
