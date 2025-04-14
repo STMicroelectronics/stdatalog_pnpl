@@ -18,7 +18,7 @@ import sys
 import json
 from datetime import datetime
 from stdatalog_pnpl.DTDL import device_template_model as DTM
-import requests
+# import requests
 
 def generate_datetime_string():
     now = datetime.now()
