@@ -44,7 +44,7 @@ BOARD_MAP = {
     126: "NUCLEO-STM32L476RG",
 }
 
-DEV_FLAG = False  # Set to True for development/testing, False for production
+DEV_FLAG = True  # Set to True for development/testing, False for production
 
 if DEV_FLAG:
     # Development URL to be used for RC testing purposes
@@ -113,6 +113,7 @@ class DeviceCatalogManager:
         instance.new_catalog_flag = False
 
         instance.catalog_entries = []
+        instance.dev_mode = DEV_FLAG  # Set the development mode flag
 
         # Load the catalog
         with open(LOCAL_DEVICE_CATALOG_PATH, "r") as catalog:
@@ -132,12 +133,21 @@ class DeviceCatalogManager:
                     fw_name=entry.get("fw_name", "no_name"),
                     fw_version=entry.get("fw_version", "no_version"),
                     dtmi=entry.get("dtmi", ""),
-                    fw_bin_url=entry.get("fw_bin_url", ""),
+                    fw_bin_url=entry.get("dwn_url", ""),
                     boudrate=entry.get("baudrate", None)
                 )
                 for entry in instance.catalog_dict
             ]
         return instance
+
+    @staticmethod
+    def is_dev_mode():
+        """
+        Returns the development mode flag.
+        """
+        # Access the singleton instance of DeviceCatalogManager
+        instance = DeviceCatalogManager.get_instance()
+        return instance.dev_mode
 
     @staticmethod
     def get_board_names_list():
@@ -175,14 +185,14 @@ class DeviceCatalogManager:
         if isinstance(board_identifier, str):
             # Handle the case where the identifier is a board name
             firmware_list = [
-                {"fw_name": entry.fw_name, "fw_version": entry.fw_version}
+                {"fw_id": entry.fw_id, "fw_name": entry.fw_name, "fw_version": entry.fw_version}
                 for entry in catalog_entries
                 if entry.board_name == board_identifier
             ]
         elif isinstance(board_identifier, int):
             # Handle the case where the identifier is a board ID
             firmware_list = [
-                {"fw_name": entry.fw_name, "fw_version": entry.fw_version}
+                {"fw_id": entry.fw_id, "fw_name": entry.fw_name, "fw_version": entry.fw_version}
                 for entry in catalog_entries
                 if entry.board_id == board_identifier
             ]
@@ -215,6 +225,28 @@ class DeviceCatalogManager:
                     DeviceCatalogManager.download_dtdl_model_from_url(entry.dtmi_url, dtdl_json_path)
                 with open(dtdl_json_path, "r") as device_model:
                     return json.load(device_model)
+        return None
+    
+    @staticmethod
+    def get_catalog_entry(board_id, fw_id) -> DeviceCatalogEntry:
+        """
+        Searches the catalog for an entry matching the given board_id and fw_id,
+        and returns the corresponding DeviceCatalogEntry.
+
+        Args:
+            board_id (int): The board ID to search for.
+            fw_id (int): The firmware ID to search for.
+
+        Returns:
+            DeviceCatalogEntry: The matching entry if found, otherwise None.
+        """
+        # Access the singleton instance of DeviceCatalogManager
+        instance = DeviceCatalogManager.get_instance()
+        # Access the catalog_entries attribute
+        catalog_entries = instance.catalog_entries
+        for entry in catalog_entries:
+            if entry.board_id == board_id and entry.fw_id == fw_id:
+                return entry
         return None
     
     @staticmethod
