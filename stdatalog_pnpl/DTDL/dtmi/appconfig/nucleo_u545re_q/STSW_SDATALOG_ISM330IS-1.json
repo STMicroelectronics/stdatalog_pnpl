@@ -1,19 +1,28 @@
 [
     {
-        "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12;1",
+        "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS;1",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:lis2duxs12_acc;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:ism330is_acc;1",
                 "@type": "Component",
                 "displayName": {
-                    "en": "LIS2DUXS12_ACC"
+                    "en": "ISM330IS_ACC"
                 },
-                "name": "lis2duxs12_acc",
-                "schema": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc;1"
+                "name": "ism330is_acc",
+                "schema": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:log_controller;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:ism330is_gyro;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "ISM330IS_GYRO"
+                },
+                "name": "ism330is_gyro",
+                "schema": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1"
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:log_controller;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Log Controller"
@@ -22,7 +31,7 @@
                 "schema": "dtmi:appconfig:other:log_controller;2"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:acquisition_info;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:acquisition_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Acquisition Information"
@@ -31,7 +40,7 @@
                 "schema": "dtmi:appconfig:other:acquisition_info;2"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:firmware_info;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:firmware_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Firmware Information"
@@ -40,7 +49,7 @@
                 "schema": "dtmi:appconfig:other:firmware_info;3"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:DeviceInformation;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:DeviceInformation;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Device Information"
@@ -50,7 +59,7 @@
             }
         ],
         "displayName": {
-            "en": "VDATALOG_LIS2DUXS12-1"
+            "en": "STSW_SDATALOG_ISM330IS-1"
         },
         "@context": [
             "dtmi:iotcentral:context;2",
@@ -62,125 +71,124 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc;1",
+        "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr;1",
-                "@type": "Property",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
                 "displayName": {
                     "en": "ODR"
                 },
                 "name": "odr",
                 "schema": {
-                    "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema;1",
+                    "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema;1",
                     "@type": "Enum",
                     "displayName": {
                         "en": "Enum"
                     },
                     "enumValues": [
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz1_6;1",
-                            "displayName": {
-                                "en": "1.6"
-                            },
-                            "enumValue": 0,
-                            "name": "hz1_6"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz3;1",
-                            "displayName": {
-                                "en": "3"
-                            },
-                            "enumValue": 1,
-                            "name": "hz3"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz6;1",
-                            "displayName": {
-                                "en": "6"
-                            },
-                            "enumValue": 2,
-                            "name": "hz6"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz12_5;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz12_5;1",
                             "displayName": {
                                 "en": "12.5"
                             },
-                            "enumValue": 3,
+                            "enumValue": 0,
                             "name": "hz12_5"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz25;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz26;1",
                             "displayName": {
-                                "en": "25"
+                                "en": "26"
+                            },
+                            "enumValue": 1,
+                            "name": "hz26"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz52;1",
+                            "displayName": {
+                                "en": "52"
+                            },
+                            "enumValue": 2,
+                            "name": "hz52"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz104;1",
+                            "displayName": {
+                                "en": "104"
+                            },
+                            "enumValue": 3,
+                            "name": "hz104"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz208;1",
+                            "displayName": {
+                                "en": "208"
                             },
                             "enumValue": 4,
-                            "name": "hz25"
+                            "name": "hz208"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz50;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz416;1",
                             "displayName": {
-                                "en": "50"
+                                "en": "416"
                             },
                             "enumValue": 5,
-                            "name": "hz50"
+                            "name": "hz416"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz100;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz833;1",
                             "displayName": {
-                                "en": "100"
+                                "en": "833"
                             },
                             "enumValue": 6,
-                            "name": "hz100"
+                            "name": "hz833"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz200;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz1667;1",
                             "displayName": {
-                                "en": "200"
+                                "en": "1667"
                             },
                             "enumValue": 7,
-                            "name": "hz200"
+                            "name": "hz1667"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz400;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz3333;1",
                             "displayName": {
-                                "en": "400"
+                                "en": "3333"
                             },
                             "enumValue": 8,
-                            "name": "hz400"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:odr:schema:hz800;1",
-                            "displayName": {
-                                "en": "800"
-                            },
-                            "enumValue": 9,
-                            "name": "hz800"
+                            "name": "hz3333"
                         }
                     ],
                     "valueSchema": "integer"
                 },
                 "unit": "hertz",
-                "writable": true
+                "writable": true,
+                "initialValue": 10
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:fs;1",
-                "@type": "Property",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
                 "displayName": {
                     "en": "FS"
                 },
                 "name": "fs",
                 "schema": {
-                    "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:fs:schema;1",
+                    "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema;1",
                     "@type": "Enum",
                     "displayName": {
                         "en": "Enum"
                     },
                     "enumValues": [
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:fs:schema:g2;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g2;1",
                             "displayName": {
                                 "en": "2"
                             },
@@ -188,7 +196,7 @@
                             "name": "g2"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:fs:schema:g4;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g4;1",
                             "displayName": {
                                 "en": "4"
                             },
@@ -196,7 +204,7 @@
                             "name": "g4"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:fs:schema:g8;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g8;1",
                             "displayName": {
                                 "en": "8"
                             },
@@ -204,7 +212,7 @@
                             "name": "g8"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:fs:schema:g16;1",
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g16;1",
                             "displayName": {
                                 "en": "16"
                             },
@@ -215,26 +223,28 @@
                     "valueSchema": "integer"
                 },
                 "unit": "gForce",
-                "writable": true
+                "writable": true,
+                "initialValue": 3
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:enable;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:enable;1",
                 "@type": [
                     "Property",
-                    "BooleanValue"
+                    "BooleanValue",
+                    "Initialized"
                 ],
                 "displayName": {
                     "en": "Enabled"
                 },
                 "name": "enable",
                 "schema": "boolean",
-                "writable": true
+                "writable": true,
+                "initialValue": true
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:samples_per_ts;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:samples_per_ts;1",
                 "@type": [
                     "Property",
-                    "Initialized",
                     "NumberValue"
                 ],
                 "displayName": {
@@ -243,12 +253,11 @@
                 "name": "samples_per_ts",
                 "schema": "integer",
                 "writable": false,
-                "initialValue": 256,
                 "maxValue": 1000,
                 "minValue": 0
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:dim;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:dim;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -261,7 +270,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:ioffset;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:ioffset;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -271,25 +280,10 @@
                 },
                 "name": "ioffset",
                 "schema": "double",
-                "unit": "second",
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:measodr;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Measured ODR"
-                },
-                "name": "measodr",
-                "schema": "double",
-                "unit": "hertz",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:sensitivity;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensitivity;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -302,7 +296,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:data_type;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:data_type;1",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -315,7 +309,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:sensor_category;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensor_category;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -331,7 +325,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32l476rg:VDATALOG_LIS2DUXS12:sensors:lis2duxs12_acc:serial_dps;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:serial_dps;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -340,12 +334,298 @@
                     "en": "Serial Data Packet Size"
                 },
                 "name": "serial_dps",
+                "schema": "double",
+                "writable": false
+            }
+        ],
+        "displayName": {
+            "en": "ISM330IS_ACC"
+        }
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "ODR"
+                },
+                "name": "odr",
+                "schema": {
+                    "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz12_5;1",
+                            "displayName": {
+                                "en": "12.5"
+                            },
+                            "enumValue": 0,
+                            "name": "hz12_5"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz26;1",
+                            "displayName": {
+                                "en": "26"
+                            },
+                            "enumValue": 1,
+                            "name": "hz26"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz52;1",
+                            "displayName": {
+                                "en": "52"
+                            },
+                            "enumValue": 2,
+                            "name": "hz52"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz104;1",
+                            "displayName": {
+                                "en": "104"
+                            },
+                            "enumValue": 3,
+                            "name": "hz104"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz208;1",
+                            "displayName": {
+                                "en": "208"
+                            },
+                            "enumValue": 4,
+                            "name": "hz208"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz416;1",
+                            "displayName": {
+                                "en": "416"
+                            },
+                            "enumValue": 5,
+                            "name": "hz416"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz833;1",
+                            "displayName": {
+                                "en": "833"
+                            },
+                            "enumValue": 6,
+                            "name": "hz833"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz1667;1",
+                            "displayName": {
+                                "en": "1667"
+                            },
+                            "enumValue": 7,
+                            "name": "hz1667"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz3333;1",
+                            "displayName": {
+                                "en": "3333"
+                            },
+                            "enumValue": 8,
+                            "name": "hz3333"
+                        }
+                    ],
+                    "valueSchema": "integer"
+                },
+                "unit": "hertz",
+                "writable": true,
+                "initialValue": 10
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "FS"
+                },
+                "name": "fs",
+                "schema": {
+                    "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps125;1",
+                            "displayName": {
+                                "en": "125"
+                            },
+                            "enumValue": 0,
+                            "name": "dps125"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps250;1",
+                            "displayName": {
+                                "en": "250"
+                            },
+                            "enumValue": 1,
+                            "name": "dps250"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps500;1",
+                            "displayName": {
+                                "en": "500"
+                            },
+                            "enumValue": 2,
+                            "name": "dps500"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps1000;1",
+                            "displayName": {
+                                "en": "1000"
+                            },
+                            "enumValue": 3,
+                            "name": "dps1000"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps2000;1",
+                            "displayName": {
+                                "en": "2000"
+                            },
+                            "enumValue": 4,
+                            "name": "dps2000"
+                        }
+                    ],
+                    "valueSchema": "integer"
+                },
+                "writable": true,
+                "displayUnit": {
+                    "en": "mdps"
+                },
+                "initialValue": 5
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:enable;1",
+                "@type": [
+                    "Property",
+                    "BooleanValue",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "Enabled"
+                },
+                "name": "enable",
+                "schema": "boolean",
+                "writable": true,
+                "initialValue": true
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:samples_per_ts;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Samples per Timestamp"
+                },
+                "name": "samples_per_ts",
+                "schema": "integer",
+                "writable": false,
+                "maxValue": 1000,
+                "minValue": 0
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:dim;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Dimensions"
+                },
+                "name": "dim",
+                "schema": "integer",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:ioffset;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Initial Offset"
+                },
+                "name": "ioffset",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensitivity;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Sensitivity"
+                },
+                "name": "sensitivity",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:data_type;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Data Type"
+                },
+                "name": "data_type",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:serial_dps;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Serial Data Packet Size"
+                },
+                "name": "serial_dps",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_u545re_q:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensor_category;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "description": {
+                    "en": "0 = ISENSOR_CLASS_MEMS"
+                },
+                "displayName": {
+                    "en": "Sensor Category"
+                },
+                "name": "sensor_category",
                 "schema": "integer",
                 "writable": false
             }
         ],
         "displayName": {
-            "en": "LIS2DUXS12_ACC"
+            "en": "ISM330IS_GYRO"
         }
     },
     {
@@ -683,7 +963,10 @@
         "@type": "Interface",
         "contents": [
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "Alias name of the firmware"
                 },
@@ -695,7 +978,10 @@
                 "writable": false
             },
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "Firmware name"
                 },
@@ -707,7 +993,10 @@
                 "writable": false
             },
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "Firmware version"
                 },
@@ -719,7 +1008,10 @@
                 "writable": false
             },
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "Part number"
                 },
@@ -731,7 +1023,10 @@
                 "writable": false
             },
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "Device URL"
                 },
@@ -743,7 +1038,10 @@
                 "writable": false
             },
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "Firmware URL"
                 },
@@ -755,7 +1053,10 @@
                 "writable": false
             },
             {
-                "@type": "Property",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
                 "description": {
                     "en": "MAC Address"
                 },
@@ -875,7 +1176,7 @@
                     "NumberValue"
                 ],
                 "description": {
-                    "en": "Total available storage on the device in kilobytes. Ex. 2048000 kilobytes."
+                    "en": "Total available storage on the device in kilobytes. Ex. 2083300 kilobytes."
                 },
                 "displayName": {
                     "en": "Total storage"
@@ -890,7 +1191,7 @@
                     "NumberValue"
                 ],
                 "description": {
-                    "en": "Total available memory on the device in kilobytes. Ex. 256000 kilobytes."
+                    "en": "Total available memory on the device in kilobytes. Ex. 2510400 kilobytes."
                 },
                 "displayName": {
                     "en": "Total memory"

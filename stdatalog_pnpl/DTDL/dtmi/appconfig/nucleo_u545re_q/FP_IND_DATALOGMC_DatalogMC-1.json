@@ -1,55 +1,28 @@
 [
     {
-        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI;3",
+        "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC;1",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:ai_motor_classifier;1",
-                "@type": "Component",
-                "displayName": {
-                    "en": "AI Motor Classifier"
-                },
-                "name": "ai_motor_classifier",
-                "schema": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier;1"
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:slow_mc_telemetries;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:slow_mc_telemetries;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Slow Motor Telemetries"
                 },
                 "name": "slow_mc_telemetries",
-                "schema": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;4"
+                "schema": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;4"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC:fast_mc_telemetries;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:fast_mc_telemetries;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Fast Motor Telemetries "
                 },
                 "name": "fast_mc_telemetries",
-                "schema": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;3"
+                "schema": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;3"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:iis3dwb_acc;1",
-                "@type": "Component",
-                "displayName": {
-                    "en": "IIS3DWB_ACC"
-                },
-                "name": "iis3dwb_acc",
-                "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc;4"
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:stts22h_temp;1",
-                "@type": "Component",
-                "displayName": {
-                    "en": "STTS22H_TEMP"
-                },
-                "name": "stts22h_temp",
-                "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp;3"
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:log_controller;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:log_controller;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Log Controller"
@@ -58,16 +31,16 @@
                 "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller;2"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:motor_controller;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:motor_controller;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Motor Controller"
                 },
                 "name": "motor_controller",
-                "schema": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;2"
+                "schema": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;2"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:tags_info;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:tags_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Tags Information"
@@ -76,7 +49,7 @@
                 "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info;1"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:acquisition_info;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:acquisition_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Acquisition Information"
@@ -85,7 +58,7 @@
                 "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info;1"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:firmware_info;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:firmware_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Firmware Information"
@@ -94,7 +67,7 @@
                 "schema": "dtmi:appconfig:other:firmware_info;3"
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI:DeviceInformation;1",
+                "@id": "dtmi:appconfig:nucleo_u545re_q:FP_IND_DATALOGMC_DatalogMC:DeviceInformation;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Device Information"
@@ -104,7 +77,7 @@
             }
         ],
         "displayName": {
-            "en": "FP_IND_DATALOGMC_DatalogMCNEAI-3"
+            "en": "FP_IND_DATALOGMC_DatalogMC-1"
         },
         "@context": [
             "dtmi:iotcentral:context;2",
@@ -116,38 +89,11 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;4",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:algorithm_type;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "comment": "1 = classification_model",
-                "displayName": {
-                    "en": "Algorithm Type"
-                },
-                "name": "algorithm_type",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:enable;1",
-                "@type": [
-                    "Property",
-                    "BooleanValue"
-                ],
-                "displayName": {
-                    "en": "Enable"
-                },
-                "name": "enable",
-                "schema": "boolean",
-                "writable": true
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:usb_dps;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:usb_dps;2",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -160,173 +106,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:data_type;1",
-                "@type": [
-                    "Property",
-                    "StringValue"
-                ],
-                "displayName": {
-                    "en": "Data Type"
-                },
-                "name": "data_type",
-                "schema": "string",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:dim;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Number of Classes"
-                },
-                "name": "dim",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream;1",
-                "@type": "Property",
-                "displayName": {
-                    "en": "AI Classifier Configuration"
-                },
-                "name": "st_ble_stream",
-                "schema": {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema;1",
-                    "@type": "Object",
-                    "displayName": {
-                        "en": "Object"
-                    },
-                    "fields": [
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:id;1",
-                            "displayName": {
-                                "en": "id"
-                            },
-                            "name": "id",
-                            "schema": "integer"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai;1",
-                            "displayName": {
-                                "en": "Class"
-                            },
-                            "name": "class_cubeai",
-                            "schema": {
-                                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema;1",
-                                "@type": "Object",
-                                "displayName": {
-                                    "en": "Object"
-                                },
-                                "fields": [
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:enable;1",
-                                        "displayName": {
-                                            "en": "enable"
-                                        },
-                                        "name": "enable",
-                                        "schema": "boolean"
-                                    },
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:unit;1",
-                                        "displayName": {
-                                            "en": "unit"
-                                        },
-                                        "name": "unit",
-                                        "schema": "string"
-                                    },
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:format;1",
-                                        "displayName": {
-                                            "en": "format"
-                                        },
-                                        "name": "format",
-                                        "schema": "string"
-                                    },
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:labels;1",
-                                        "displayName": {
-                                            "en": "labels"
-                                        },
-                                        "name": "labels",
-                                        "schema": "string"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai;1",
-                            "displayName": {
-                                "en": "Probability"
-                            },
-                            "name": "probability_cubeai",
-                            "schema": {
-                                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema;1",
-                                "@type": "Object",
-                                "displayName": {
-                                    "en": "Object"
-                                },
-                                "fields": [
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema:enable;1",
-                                        "displayName": {
-                                            "en": "enable"
-                                        },
-                                        "name": "enable",
-                                        "schema": "boolean"
-                                    },
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema:unit;1",
-                                        "displayName": {
-                                            "en": "unit"
-                                        },
-                                        "name": "unit",
-                                        "schema": "string"
-                                    },
-                                    {
-                                        "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema:format;1",
-                                        "displayName": {
-                                            "en": "format"
-                                        },
-                                        "name": "format",
-                                        "schema": "string"
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "writable": true
-            }
-        ],
-        "displayName": {
-            "en": "Anomaly detector"
-        }
-    },
-    {
-        "@context": [
-            "dtmi:iotcentral:context;2",
-            "dtmi:dtdl:context;2"
-        ],
-        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;4",
-        "@type": "Interface",
-        "contents": [
-            {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:usb_dps;2",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "USB Data Packet Size"
-                },
-                "name": "usb_dps",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:sd_dps;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:sd_dps;2",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -339,7 +119,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:enable;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:enable;2",
                 "@type": [
                     "Property",
                     "Initialized",
@@ -354,7 +134,7 @@
                 "initialValue": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:data_type;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:data_type;2",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -367,7 +147,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:odr;4",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:odr;4",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -380,7 +160,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:ioffset;4",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:ioffset;4",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -393,7 +173,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:samples_per_ts;4",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:samples_per_ts;4",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -406,7 +186,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:dim;4",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:dim;4",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -419,21 +199,21 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream;2",
                 "@type": "Property",
                 "displayName": {
                     "en": "Slow Telemetries Configuration"
                 },
                 "name": "st_ble_stream",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema;2",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema;2",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:id;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:id;2",
                             "displayName": {
                                 "en": "Id"
                             },
@@ -441,20 +221,20 @@
                             "schema": "integer"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature;2",
                             "displayName": {
                                 "en": "Temperature"
                             },
                             "name": "temperature",
                             "schema": {
-                                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema;2",
+                                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema;2",
                                 "@type": "Object",
                                 "displayName": {
                                     "en": "Object"
                                 },
                                 "fields": [
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:enable;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:enable;2",
                                         "displayName": {
                                             "en": "enable"
                                         },
@@ -462,7 +242,7 @@
                                         "schema": "boolean"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:unit;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:unit;2",
                                         "displayName": {
                                             "en": "unit"
                                         },
@@ -470,7 +250,7 @@
                                         "schema": "string"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:format;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:format;2",
                                         "displayName": {
                                             "en": "format"
                                         },
@@ -481,20 +261,20 @@
                             }
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed;2",
                             "displayName": {
                                 "en": "Ref Speed"
                             },
                             "name": "ref_speed",
                             "schema": {
-                                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema;2",
+                                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema;2",
                                 "@type": "Object",
                                 "displayName": {
                                     "en": "Object"
                                 },
                                 "fields": [
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:enable;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:enable;2",
                                         "displayName": {
                                             "en": "enable"
                                         },
@@ -502,7 +282,7 @@
                                         "schema": "boolean"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:unit;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:unit;2",
                                         "displayName": {
                                             "en": "unit"
                                         },
@@ -510,7 +290,7 @@
                                         "schema": "string"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:format;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:format;2",
                                         "displayName": {
                                             "en": "format"
                                         },
@@ -521,20 +301,20 @@
                             }
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed;2",
                             "displayName": {
                                 "en": "Speed"
                             },
                             "name": "speed",
                             "schema": {
-                                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema;2",
+                                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema;2",
                                 "@type": "Object",
                                 "displayName": {
                                     "en": "Object"
                                 },
                                 "fields": [
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:enable;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:enable;2",
                                         "displayName": {
                                             "en": "enable"
                                         },
@@ -542,7 +322,7 @@
                                         "schema": "boolean"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:unit;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:unit;2",
                                         "displayName": {
                                             "en": "unit"
                                         },
@@ -550,7 +330,7 @@
                                         "schema": "string"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:format;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:format;2",
                                         "displayName": {
                                             "en": "format"
                                         },
@@ -558,7 +338,7 @@
                                         "schema": "string"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:max;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:max;2",
                                         "displayName": {
                                             "en": "max"
                                         },
@@ -566,7 +346,7 @@
                                         "schema": "integer"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:initial_value;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:initial_value;2",
                                         "displayName": {
                                             "en": "initial_value"
                                         },
@@ -577,20 +357,20 @@
                             }
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage;2",
                             "displayName": {
                                 "en": "Bus Voltage"
                             },
                             "name": "bus_voltage",
                             "schema": {
-                                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema;2",
+                                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema;2",
                                 "@type": "Object",
                                 "displayName": {
                                     "en": "Object"
                                 },
                                 "fields": [
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:enable;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:enable;2",
                                         "displayName": {
                                             "en": "enable"
                                         },
@@ -598,7 +378,7 @@
                                         "schema": "boolean"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:unit;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:unit;2",
                                         "displayName": {
                                             "en": "unit"
                                         },
@@ -606,7 +386,7 @@
                                         "schema": "string"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:format;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:format;2",
                                         "displayName": {
                                             "en": "format"
                                         },
@@ -617,20 +397,20 @@
                             }
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault;2",
                             "displayName": {
                                 "en": "Fault"
                             },
                             "name": "fault",
                             "schema": {
-                                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema;2",
+                                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema;2",
                                 "@type": "Object",
                                 "displayName": {
                                     "en": "Object"
                                 },
                                 "fields": [
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:enable;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:enable;2",
                                         "displayName": {
                                             "en": "enable"
                                         },
@@ -638,7 +418,7 @@
                                         "schema": "boolean"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:unit;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:unit;2",
                                         "displayName": {
                                             "en": "unit"
                                         },
@@ -646,7 +426,7 @@
                                         "schema": "string"
                                     },
                                     {
-                                        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:format;2",
+                                        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:format;2",
                                         "displayName": {
                                             "en": "format"
                                         },
@@ -670,11 +450,11 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;3",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:usb_dps;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:usb_dps;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -687,7 +467,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sd_dps;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sd_dps;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -700,7 +480,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:enable;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:enable;1",
                 "@type": [
                     "Property",
                     "BooleanValue"
@@ -713,7 +493,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:data_type;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:data_type;1",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -726,7 +506,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:dim;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:dim;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -739,7 +519,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -749,14 +529,14 @@
                 },
                 "name": "i_q",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -764,7 +544,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -776,7 +556,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -786,14 +566,14 @@
                 },
                 "name": "i_d",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -801,7 +581,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -813,7 +593,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -823,14 +603,14 @@
                 },
                 "name": "i_q_ref",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -838,7 +618,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -850,7 +630,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -860,14 +640,14 @@
                 },
                 "name": "i_d_ref",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -875,7 +655,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -887,7 +667,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -897,14 +677,14 @@
                 },
                 "name": "v_q",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -912,7 +692,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -924,7 +704,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -934,14 +714,14 @@
                 },
                 "name": "v_d",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -949,7 +729,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -961,7 +741,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -971,14 +751,14 @@
                 },
                 "name": "i_a",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -986,7 +766,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -998,7 +778,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -1008,14 +788,14 @@
                 },
                 "name": "i_b",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -1023,7 +803,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -1035,7 +815,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -1045,14 +825,14 @@
                 },
                 "name": "v_a",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -1060,7 +840,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -1072,7 +852,7 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b;1",
                 "@type": "Property",
                 "description": {
                     "en": "fast_mc_telemetry"
@@ -1082,14 +862,14 @@
                 },
                 "name": "v_b",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema;1",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:enabled;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:enabled;1",
                             "displayName": {
                                 "en": "Enabled"
                             },
@@ -1097,7 +877,7 @@
                             "schema": "boolean"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:unit;1",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:unit;1",
                             "displayName": {
                                 "en": "Unit"
                             },
@@ -1109,21 +889,21 @@
                 "writable": true
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity;2",
                 "@type": "Property",
                 "displayName": {
                     "en": "Sensitivity"
                 },
                 "name": "sensitivity",
                 "schema": {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema;2",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema;2",
                     "@type": "Object",
                     "displayName": {
                         "en": "Object"
                     },
                     "fields": [
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema:voltage;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema:voltage;2",
                             "displayName": {
                                 "en": "Voltage"
                             },
@@ -1131,7 +911,7 @@
                             "schema": "double"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema:current;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema:current;2",
                             "displayName": {
                                 "en": "Current"
                             },
@@ -1139,7 +919,7 @@
                             "schema": "double"
                         },
                         {
-                            "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema:frequency;2",
+                            "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sensitivity:schema:frequency;2",
                             "displayName": {
                                 "en": "Frequency"
                             },
@@ -1151,7 +931,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:samples_per_ts;3",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:samples_per_ts;3",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -1164,7 +944,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:odr;3",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:odr;3",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -1177,7 +957,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:ioffset;3",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:ioffset;3",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -1192,510 +972,6 @@
         ],
         "displayName": {
             "en": "Fast Motor Telemetries "
-        }
-    },
-    {
-        "@context": [
-            "dtmi:iotcentral:context;2",
-            "dtmi:dtdl:context;2"
-        ],
-        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc;4",
-        "@type": "Interface",
-        "contents": [
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr;1",
-                "@type": "Property",
-                "displayName": {
-                    "en": "ODR"
-                },
-                "name": "odr",
-                "schema": {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr:schema;1",
-                    "@type": "Enum",
-                    "displayName": {
-                        "en": "Enum"
-                    },
-                    "enumValues": [
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr:schema:hz26667;1",
-                            "displayName": {
-                                "en": "26667"
-                            },
-                            "enumValue": 0,
-                            "name": "hz26667"
-                        }
-                    ],
-                    "valueSchema": "integer"
-                },
-                "unit": "hertz",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs;1",
-                "@type": "Property",
-                "displayName": {
-                    "en": "FS"
-                },
-                "name": "fs",
-                "schema": {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema;1",
-                    "@type": "Enum",
-                    "displayName": {
-                        "en": "Enum"
-                    },
-                    "enumValues": [
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g2;1",
-                            "displayName": {
-                                "en": "2"
-                            },
-                            "enumValue": 0,
-                            "name": "g2"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g4;1",
-                            "displayName": {
-                                "en": "4"
-                            },
-                            "enumValue": 1,
-                            "name": "g4"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g8;1",
-                            "displayName": {
-                                "en": "8"
-                            },
-                            "enumValue": 2,
-                            "name": "g8"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g16;1",
-                            "displayName": {
-                                "en": "16"
-                            },
-                            "enumValue": 3,
-                            "name": "g16"
-                        }
-                    ],
-                    "valueSchema": "integer"
-                },
-                "unit": "gForce",
-                "writable": true
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:enable;1",
-                "@type": [
-                    "Property",
-                    "BooleanValue"
-                ],
-                "displayName": {
-                    "en": "Enabled"
-                },
-                "name": "enable",
-                "schema": "boolean",
-                "writable": true
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:samples_per_ts;1",
-                "@type": [
-                    "Property",
-                    "Initialized",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Samples per Timestamp"
-                },
-                "name": "samples_per_ts",
-                "schema": "integer",
-                "writable": true,
-                "initialValue": 1000,
-                "maxValue": 1000,
-                "minValue": 0
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:dim;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Dimensions"
-                },
-                "name": "dim",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:ioffset;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Initial Offset"
-                },
-                "name": "ioffset",
-                "schema": "double",
-                "unit": "second",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:measodr;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Measured ODR"
-                },
-                "name": "measodr",
-                "schema": "double",
-                "unit": "hertz",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:usb_dps;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "USB Data Packet Size"
-                },
-                "name": "usb_dps",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sd_dps;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "SD Data Packet Size"
-                },
-                "name": "sd_dps",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensitivity;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Sensitivity"
-                },
-                "name": "sensitivity",
-                "schema": "double",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:data_type;1",
-                "@type": [
-                    "Property",
-                    "StringValue"
-                ],
-                "displayName": {
-                    "en": "Data Type"
-                },
-                "name": "data_type",
-                "schema": "string",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensor_annotation;1",
-                "@type": [
-                    "Property",
-                    "StringValue"
-                ],
-                "displayName": {
-                    "en": "Sensor Annotation"
-                },
-                "name": "sensor_annotation",
-                "schema": "string",
-                "writable": true
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensor_category;3",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "description": {
-                    "en": "0 = ISENSOR_CLASS_MEMS"
-                },
-                "displayName": {
-                    "en": "Sensor Category"
-                },
-                "name": "sensor_category",
-                "schema": "integer",
-                "writable": false
-            }
-        ],
-        "displayName": {
-            "en": "IIS3DWB_ACC"
-        }
-    },
-    {
-        "@context": [
-            "dtmi:iotcentral:context;2",
-            "dtmi:dtdl:context;2"
-        ],
-        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp;3",
-        "@type": "Interface",
-        "contents": [
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr;1",
-                "@type": [
-                    "Property",
-                    "Initialized"
-                ],
-                "displayName": {
-                    "en": "ODR"
-                },
-                "name": "odr",
-                "schema": {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema;1",
-                    "@type": "Enum",
-                    "displayName": {
-                        "en": "Enum"
-                    },
-                    "enumValues": [
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz1;1",
-                            "displayName": {
-                                "en": "1"
-                            },
-                            "enumValue": 0,
-                            "name": "hz1"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz25;1",
-                            "displayName": {
-                                "en": "25"
-                            },
-                            "enumValue": 1,
-                            "name": "hz25"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz50;1",
-                            "displayName": {
-                                "en": "50"
-                            },
-                            "enumValue": 2,
-                            "name": "hz50"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz100;1",
-                            "displayName": {
-                                "en": "100"
-                            },
-                            "enumValue": 3,
-                            "name": "hz100"
-                        },
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz200;1",
-                            "displayName": {
-                                "en": "200"
-                            },
-                            "enumValue": 4,
-                            "name": "hz200"
-                        }
-                    ],
-                    "valueSchema": "integer"
-                },
-                "unit": "hertz",
-                "writable": true,
-                "initialValue": 4
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs;1",
-                "@type": "Property",
-                "displayName": {
-                    "en": "FS"
-                },
-                "name": "fs",
-                "schema": {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs:schema;1",
-                    "@type": "Enum",
-                    "displayName": {
-                        "en": "Enum"
-                    },
-                    "enumValues": [
-                        {
-                            "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs:schema:cdeg100;1",
-                            "displayName": {
-                                "en": "100"
-                            },
-                            "enumValue": 0,
-                            "name": "cdeg100"
-                        }
-                    ],
-                    "valueSchema": "integer"
-                },
-                "unit": "degreeCelsius",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:enable;1",
-                "@type": [
-                    "Property",
-                    "BooleanValue",
-                    "Initialized"
-                ],
-                "displayName": {
-                    "en": "Enabled"
-                },
-                "name": "enable",
-                "schema": "boolean",
-                "writable": true,
-                "initialValue": true
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:samples_per_ts;1",
-                "@type": [
-                    "Property",
-                    "Initialized",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Samples per Timestamp"
-                },
-                "name": "samples_per_ts",
-                "schema": "integer",
-                "writable": true,
-                "initialValue": 200,
-                "maxValue": 200,
-                "minValue": 0
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:dim;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Dimensions"
-                },
-                "name": "dim",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:ioffset;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Initial Offset"
-                },
-                "name": "ioffset",
-                "schema": "double",
-                "unit": "second",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:measodr;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Measured ODR"
-                },
-                "name": "measodr",
-                "schema": "double",
-                "unit": "hertz",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:usb_dps;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "USB Data Packet Size"
-                },
-                "name": "usb_dps",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sd_dps;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "SD Data Packet Size"
-                },
-                "name": "sd_dps",
-                "schema": "integer",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensitivity;1",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName": {
-                    "en": "Sensitivity"
-                },
-                "name": "sensitivity",
-                "schema": "double",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:data_type;1",
-                "@type": [
-                    "Property",
-                    "StringValue"
-                ],
-                "displayName": {
-                    "en": "Data Type"
-                },
-                "name": "data_type",
-                "schema": "string",
-                "writable": false
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensor_annotation;1",
-                "@type": [
-                    "Property",
-                    "StringValue"
-                ],
-                "displayName": {
-                    "en": "Sensor Annotation"
-                },
-                "name": "sensor_annotation",
-                "schema": "string",
-                "writable": true
-            },
-            {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensor_category;3",
-                "@type": [
-                    "Property",
-                    "NumberValue"
-                ],
-                "description": {
-                    "en": "0 = ISENSOR_CLASS_MEMS"
-                },
-                "displayName": {
-                    "en": "Sensor Category"
-                },
-                "name": "sensor_category",
-                "schema": "integer",
-                "writable": false
-            }
-        ],
-        "displayName": {
-            "en": "STTS22H_TEMP"
         }
     },
     {
@@ -1841,11 +1117,11 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;2",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;2",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:start_motor;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:start_motor;1",
                 "@type": "Command",
                 "commandType": "synchronous",
                 "displayName": {
@@ -1854,7 +1130,7 @@
                 "name": "start_motor"
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:stop_motor;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:stop_motor;1",
                 "@type": "Command",
                 "commandType": "synchronous",
                 "displayName": {
@@ -1863,7 +1139,7 @@
                 "name": "stop_motor"
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_reset;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_reset;1",
                 "@type": "Command",
                 "commandType": "synchronous",
                 "displayName": {
@@ -1872,7 +1148,7 @@
                 "name": "motor_reset"
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:ack_fault;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:ack_fault;1",
                 "@type": "Command",
                 "commandType": "synchronous",
                 "displayName": {
@@ -1881,7 +1157,7 @@
                 "name": "ack_fault"
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_status;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_status;1",
                 "@type": [
                     "Property",
                     "BooleanValue"
@@ -1897,7 +1173,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_speed;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_speed;1",
                 "@type": [
                     "Property",
                     "Initialized",
@@ -1917,7 +1193,7 @@
                 "minValue": -4000
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:control_stage;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:control_stage;2",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -1930,7 +1206,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:power_stage;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:power_stage;2",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -1943,7 +1219,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_name;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_name;2",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -1956,7 +1232,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:mcwb_sdk_version;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:mcwb_sdk_version;2",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -1969,7 +1245,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:pwm_frequency;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:pwm_frequency;2",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -1983,7 +1259,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:ramp_speed;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:ramp_speed;2",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -2000,7 +1276,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:max_speed;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:max_speed;2",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -2017,7 +1293,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:mcp_configured;2",
+                "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:mcp_configured;2",
                 "@type": [
                     "Property",
                     "BooleanValue"

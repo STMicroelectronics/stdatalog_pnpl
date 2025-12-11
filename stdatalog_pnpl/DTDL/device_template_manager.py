@@ -44,14 +44,8 @@ BOARD_MAP = {
     126: "NUCLEO-STM32L476RG",
 }
 
-DEV_FLAG = True  # Set to True for development/testing, False for production
-
-if DEV_FLAG:
-    # Development URL to be used for RC testing purposes
-    DEFAULT_URL = "https://raw.githubusercontent.com/SW-Platforms/appconfig/refs/heads/fwdb-automation/usb/catalog.json"
-else:
-    # Production URL to be used for final release
-    DEFAULT_URL = "https://raw.githubusercontent.com/STMicroelectronics/appconfig/refs/heads/release/usb/catalog.json"
+# Production URL to be used for final release
+DEFAULT_URL = "https://raw.githubusercontent.com/STMicroelectronics/appconfig/refs/heads/release/usb/catalog.json"
 
 LOCAL_DEVICE_CATALOG_PATH = os.path.join(os.path.dirname(sys.modules[__name__].__file__), "usb_device_catalog.json")
 
@@ -67,14 +61,15 @@ def print_warning(text):
     print("\033[33m{}\033[0m".format(text))
 
 class DeviceCatalogEntry:
-    def __init__(self, board_id, fw_id, protocol, board_name, fw_name, fw_version, dtmi, fw_bin_url, boudrate=None):
+    def __init__(self, board_id, fw_id, protocol, board_name, fw_name, fw_version, fw_page_url, dtmi, fw_bin_url, baudrate=None):
 
-        self.board_id = board_id
-        self.fw_id = fw_id
+        self.board_id:int = board_id
+        self.fw_id:int = fw_id
         self.protocol = protocol
         self.board_name = board_name
         self.fw_name = fw_name
         self.fw_version = fw_version
+        self.fw_page_url = fw_page_url
         self.dtmi = dtmi
         if self.dtmi:
             self.dtmi_local_path = DeviceCatalogManager.get_path_from_dtmi(dtmi)
@@ -84,10 +79,10 @@ class DeviceCatalogEntry:
             self.dtmi_url = None
         self.fw_bin_url = fw_bin_url
 
-        self.boudrate = boudrate
+        self.baudrate = baudrate
 
     def __repr__(self):
-        return f"DeviceCatalogEntry(board_id={self.board_id}, fw_id={self.fw_id}, protocol={self.protocol}, board_name={self.board_name}, fw_name={self.fw_name}, fw_version={self.fw_version}, dtmi={self.dtmi}, dtmi_path={self.dtmi_local_path}, dtmi_url={self.dtmi_url}, fw_bin_url={self.fw_bin_url})"
+        return f"DeviceCatalogEntry(board_id={self.board_id}, fw_id={self.fw_id}, protocol={self.protocol}, board_name={self.board_name}, fw_name={self.fw_name}, fw_version={self.fw_version}, fw_page_url={self.fw_page_url}, dtmi={self.dtmi}, dtmi_path={self.dtmi_local_path}, dtmi_url={self.dtmi_url}, fw_bin_url={self.fw_bin_url})"
 
 class DeviceCatalogManager:
     _instance = None  # Static variable to hold the singleton instance
@@ -113,7 +108,7 @@ class DeviceCatalogManager:
         instance.new_catalog_flag = False
 
         instance.catalog_entries = []
-        instance.dev_mode = DEV_FLAG  # Set the development mode flag
+        instance.dev_mode = False  # Set the development mode flag
 
         # Load the catalog
         with open(LOCAL_DEVICE_CATALOG_PATH, "r") as catalog:
@@ -132,9 +127,10 @@ class DeviceCatalogManager:
                     board_name=entry.get("brd_name", BOARD_MAP.get(entry.get("board_id"), 16) if entry.get('board_id') not in ('', None) and isinstance(entry.get("board_id"), str) else entry.get("board_id")),
                     fw_name=entry.get("fw_name", "no_name"),
                     fw_version=entry.get("fw_version", "no_version"),
+                    fw_page_url=entry.get("fw_page_url",""),
                     dtmi=entry.get("dtmi", ""),
                     fw_bin_url=entry.get("dwn_url", ""),
-                    boudrate=entry.get("baudrate", None)
+                    baudrate=entry.get("baudrate", None)
                 )
                 for entry in instance.catalog_dict
             ]
@@ -185,14 +181,14 @@ class DeviceCatalogManager:
         if isinstance(board_identifier, str):
             # Handle the case where the identifier is a board name
             firmware_list = [
-                {"fw_id": entry.fw_id, "fw_name": entry.fw_name, "fw_version": entry.fw_version}
+                {"fw_id": entry.fw_id, "fw_name": entry.fw_name, "fw_version": entry.fw_version, "fw_page_url": entry.fw_page_url, "protocol": entry.protocol, "baudrate": entry.baudrate}
                 for entry in catalog_entries
                 if entry.board_name == board_identifier
             ]
         elif isinstance(board_identifier, int):
             # Handle the case where the identifier is a board ID
             firmware_list = [
-                {"fw_id": entry.fw_id, "fw_name": entry.fw_name, "fw_version": entry.fw_version}
+                {"fw_id": entry.fw_id, "fw_name": entry.fw_name, "fw_version": entry.fw_version, "fw_page_url": entry.fw_page_url, "protocol": entry.protocol, "baudrate": entry.baudrate}
                 for entry in catalog_entries
                 if entry.board_id == board_identifier
             ]
@@ -267,7 +263,24 @@ class DeviceCatalogManager:
 
         # Convert entries to dictionaries indexed by a unique key (e.g., board_id + fw_id)
         def create_key(entry):
-            return f"{entry.get('board_id', '')}_{entry.get('usb_fw_id', '')}"
+            def to_int(val):
+                if val in (None, ""):
+                    return -1
+                if isinstance(val, int):
+                    return val
+                if isinstance(val, str):
+                    try:
+                        return int(val, 16)
+                    except ValueError:
+                        try:
+                            return int(val)
+                        except ValueError:
+                            return -1
+                return -1
+
+            board_id = to_int(entry.get("board_id"))
+            fw_id = to_int(entry.get("usb_fw_id", entry.get("fw_id")))
+            return f"{board_id}_{fw_id}"
 
         local_dict = {create_key(entry): entry for entry in local_catalog_dict}
         online_dict = {create_key(entry): entry for entry in online_catalog_usb}
@@ -276,8 +289,16 @@ class DeviceCatalogManager:
         for key, online_entry in online_dict.items():
             if key not in local_dict:
                 added.append(online_entry)
-            elif local_dict[key] != online_entry:
-                modified.append({"local": local_dict[key], "online": online_entry})
+            else:
+                local_entry = local_dict[key]
+                # Ignore identity fields when comparing (board_id, usb_fw_id, fw_id)
+                def _strip_ids(d: dict):
+                    return {
+                        k: v for k, v in d.items()
+                        if k not in ("board_id", "usb_fw_id", "fw_id")
+                    }
+                if _strip_ids(local_entry) != _strip_ids(online_entry):
+                    modified.append({"local": local_entry, "online": online_entry})
 
         # Check for removed entries
         for key, local_entry in local_dict.items():
@@ -314,6 +335,7 @@ class DeviceCatalogManager:
             date = catalog_data.get("date")
             version = catalog_data.get("version")
             checksum = catalog_data.get("checksum")
+            
             online_catalog_info = {"date": date, "version": version, "checksum": checksum}
             local_date = datetime.strptime(local_catalog_info["date"], "%Y-%m-%d %H:%M:%S.%f")
             online_date = datetime.strptime(online_catalog_info["date"], "%Y-%m-%d %H:%M:%S.%f")
@@ -484,12 +506,8 @@ class DeviceCatalogManager:
         # Replace ':' with '/' and the last ';' with '-'
         dtmi_path = dtmi_string.replace(":", "/").replace(";", "-", 1)
 
-        if DEV_FLAG:
-            # Development URL to be used for RC testing purposes
-            base_url = "https://raw.githubusercontent.com/SW-Platforms/appconfig/refs/heads/fwdb-automation/"
-        else:
-            # Production URL to be used for final release
-            base_url = "https://raw.githubusercontent.com/STMicroelectronics/appconfig/refs/heads/release/"
+        # Production URL to be used for final release
+        base_url = "https://raw.githubusercontent.com/STMicroelectronics/appconfig/refs/heads/release/"
         return f"{base_url}{dtmi_path}.expanded.json"
 
     @staticmethod
